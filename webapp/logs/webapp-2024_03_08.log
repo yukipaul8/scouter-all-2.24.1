@@ -1,0 +1,709 @@
+ 12:41:28.717 [main]  INFO  scouterx.webapp.main.WebAppMain[270] - scouter webapp starting! Run-Mode:StandAlone
+ 12:41:28.773 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265
+ 12:41:31.779 [main]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:41:31.780 [main]  ERROR scouterx.webapp.main.WebAppMain[228] - Fail to log in to 47.129.51.147:6100
+ 12:41:31.792 [main]  INFO  org.eclipse.jetty.util.log[192] - Logging initialized @3841ms to org.eclipse.jetty.util.log.Slf4jLog
+ 12:41:31.968 [main]  INFO  org.eclipse.jetty.server.Server[372] - jetty-9.4.6.v20170531
+ 12:41:31.993 [main]  INFO  o.e.j.server.AbstractNCSARequestLog[230] - Opened /opt/SCOUTER/scouter/webapp/logs/http-request-2024_03_08.log
+ 12:41:32.003 [main]  INFO  org.eclipse.jetty.server.session[364] - DefaultSessionIdManager workerName=node0
+ 12:41:32.004 [main]  INFO  org.eclipse.jetty.server.session[369] - No SessionScavenger set, using defaults
+ 12:41:32.006 [main]  INFO  org.eclipse.jetty.server.session[149] - Scavenging every 600000ms
+ 12:41:33.117 [main]  WARN  o.e.j.s.handler.ContextHandler.ROOT[2231] - unavailable
+org.glassfish.hk2.api.MultiException: A MultiException has 2 exceptions.  They are:
+1. java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+2. java.lang.IllegalStateException: Unable to perform operation: create on scouterx.webapp.framework.mapper.JerseyMapperProvider
+
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:392)
+	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:487)
+	at org.jvnet.hk2.internal.SingletonContext$1.compute(SingletonContext.java:83)
+	at org.jvnet.hk2.internal.SingletonContext$1.compute(SingletonContext.java:71)
+	at org.glassfish.hk2.utilities.cache.Cache$OriginThreadAwareFuture$1.call(Cache.java:97)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.glassfish.hk2.utilities.cache.Cache$OriginThreadAwareFuture.run(Cache.java:154)
+	at org.glassfish.hk2.utilities.cache.Cache.compute(Cache.java:199)
+	at org.jvnet.hk2.internal.SingletonContext.findOrCreate(SingletonContext.java:122)
+	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2126)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1491)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServices(ServiceLocatorImpl.java:818)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllInstances(AbstractHk2InjectionManager.java:194)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllInstances(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.ContextResolverFactory$ContextResolversConfigurator.postInit(ContextResolverFactory.java:93)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$2(ApplicationHandler.java:372)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:372)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$1(ApplicationHandler.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:315)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:282)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:178)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:370)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:272)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:452)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:419)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at scouterx.webapp.main.WebAppMain.main(WebAppMain.java:111)
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:655)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:558)
+	at scouterx.webapp.framework.mapper.JerseyMapperProvider.<clinit>(JerseyMapperProvider.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.makeMe(ReflectionHelper.java:1375)
+	at org.jvnet.hk2.internal.ClazzCreator.createMe(ClazzCreator.java:272)
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:366)
+	... 50 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.util.JacksonFeature
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 60 common frames omitted
+ 12:41:33.255 [main]  INFO  org.reflections.Reflections[232] - Reflections took 97 ms to scan 1 urls, producing 309 keys and 418 values 
+ 12:41:36.784 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3c6353b0
+ 12:41:39.787 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:41:39.787 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:41:44.788 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5b6e2b15
+ 12:41:47.792 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:41:47.793 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:41:52.793 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@62bbf564
+ 12:41:55.797 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:41:55.798 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:42:00.799 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@75c2dcb6
+ 12:42:03.802 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:42:03.802 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:42:08.803 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@69664d54
+ 12:42:11.807 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:42:11.807 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:42:16.808 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@32dab6ae
+ 12:42:19.812 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:42:19.812 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:42:24.813 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7ba61f1e
+ 12:42:27.817 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:42:27.818 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:42:32.819 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3c701e8f
+ 12:42:35.822 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:42:35.823 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:42:40.824 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3e875fa3
+ 12:42:43.827 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:42:43.828 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:42:48.829 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@133e025d
+ 12:42:50.398 [main]  INFO  scouterx.webapp.main.WebAppMain[270] - scouter webapp starting! Run-Mode:StandAlone
+ 12:42:50.453 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265
+ 12:42:50.463 [main]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@614ddd49 to 18.142.186.146:6100
+ 12:42:50.470 [main]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265, stack:
+ 12:42:50.473 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2d6eabae
+ 12:42:50.474 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@4e7dc304
+ 12:42:50.475 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@64729b1e
+ 12:42:50.475 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:3, scouterx.webapp.framework.client.net.TcpProxy@10bbd20a
+ 12:42:50.475 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@48503868
+ 12:42:50.475 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:5, scouterx.webapp.framework.client.net.TcpProxy@6895a785
+ 12:42:50.479 [main]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@27a5f880 to 18.142.186.146:6100
+ 12:42:50.506 [main]  INFO  scouterx.webapp.main.WebAppMain[223] - Successfully log in to 18.142.186.146:6100
+ 12:42:50.511 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@f5fb704 to 18.142.186.146:6100
+ 12:42:50.526 [main]  INFO  org.eclipse.jetty.util.log[192] - Logging initialized @885ms to org.eclipse.jetty.util.log.Slf4jLog
+ 12:42:50.544 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@40a552a4 to 18.142.186.146:6100
+ 12:42:50.704 [main]  INFO  org.eclipse.jetty.server.Server[372] - jetty-9.4.6.v20170531
+ 12:42:50.728 [main]  INFO  o.e.j.server.AbstractNCSARequestLog[230] - Opened /opt/SCOUTER/scouter/webapp/logs/http-request-2024_03_08.log
+ 12:42:50.735 [main]  INFO  org.eclipse.jetty.server.session[364] - DefaultSessionIdManager workerName=node0
+ 12:42:50.735 [main]  INFO  org.eclipse.jetty.server.session[369] - No SessionScavenger set, using defaults
+ 12:42:50.737 [main]  INFO  org.eclipse.jetty.server.session[149] - Scavenging every 660000ms
+ 12:42:51.418 [XLogThread-18.142.186.146:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3c85daf6 to 18.142.186.146:6100
+ 12:42:51.830 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:42:51.830 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:42:51.843 [main]  WARN  o.e.j.s.handler.ContextHandler.ROOT[2231] - unavailable
+org.glassfish.hk2.api.MultiException: A MultiException has 2 exceptions.  They are:
+1. java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+2. java.lang.IllegalStateException: Unable to perform operation: create on scouterx.webapp.framework.mapper.JerseyMapperProvider
+
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:392)
+	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:487)
+	at org.jvnet.hk2.internal.SingletonContext$1.compute(SingletonContext.java:83)
+	at org.jvnet.hk2.internal.SingletonContext$1.compute(SingletonContext.java:71)
+	at org.glassfish.hk2.utilities.cache.Cache$OriginThreadAwareFuture$1.call(Cache.java:97)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.glassfish.hk2.utilities.cache.Cache$OriginThreadAwareFuture.run(Cache.java:154)
+	at org.glassfish.hk2.utilities.cache.Cache.compute(Cache.java:199)
+	at org.jvnet.hk2.internal.SingletonContext.findOrCreate(SingletonContext.java:122)
+	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2126)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1491)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServices(ServiceLocatorImpl.java:818)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllInstances(AbstractHk2InjectionManager.java:194)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllInstances(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.ContextResolverFactory$ContextResolversConfigurator.postInit(ContextResolverFactory.java:93)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$2(ApplicationHandler.java:372)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:372)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$1(ApplicationHandler.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:315)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:282)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:178)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:370)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:272)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:452)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:419)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at scouterx.webapp.main.WebAppMain.main(WebAppMain.java:111)
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:655)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:558)
+	at scouterx.webapp.framework.mapper.JerseyMapperProvider.<clinit>(JerseyMapperProvider.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.makeMe(ReflectionHelper.java:1375)
+	at org.jvnet.hk2.internal.ClazzCreator.createMe(ClazzCreator.java:272)
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:366)
+	... 50 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.util.JacksonFeature
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 60 common frames omitted
+ 12:42:51.967 [main]  INFO  org.reflections.Reflections[232] - Reflections took 85 ms to scan 1 urls, producing 309 keys and 418 values 
+ 12:42:52.413 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7e2b191b to 18.142.186.146:6100
+ 12:42:52.503 [XLogThread-18.142.186.146:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2a0b2f17 to 18.142.186.146:6100
+ 12:42:56.831 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e84c29d
+ 12:42:59.835 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:42:59.835 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:43:04.836 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4278c717
+ 12:43:07.840 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:43:07.840 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:43:12.841 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6bff06b6
+ 12:43:15.845 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:43:15.845 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:43:20.846 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2d3af46
+ 12:43:23.847 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:43:23.848 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:43:28.849 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@56bd97b4
+ 12:43:31.853 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:43:31.853 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:43:36.854 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@79f6d51b
+ 12:43:39.858 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:43:39.858 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:43:44.859 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4768cd34
+ 12:43:47.863 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:43:47.863 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:43:52.864 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@77f19d75
+ 12:43:55.868 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:43:55.868 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:44:00.869 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7738e196
+ 12:44:03.873 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:44:03.873 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:44:08.874 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3deccc3b
+ 12:44:11.878 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:44:11.878 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:44:16.879 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6ae04852
+ 12:44:19.882 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:44:19.882 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:44:24.883 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@18ad8eca
+ 12:44:27.887 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:44:27.887 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:44:32.888 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7f5a837d
+ 12:44:35.892 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:44:35.892 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:44:40.893 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@35b33ed9
+ 12:44:43.897 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:44:43.897 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:44:48.898 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@34573639
+ 12:44:51.902 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:44:51.902 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:44:56.903 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@41748661
+ 12:44:59.906 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:44:59.906 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:45:04.907 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2665d18e
+ 12:45:07.910 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:45:07.910 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:45:12.911 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@572a3669
+ 12:45:15.915 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:45:15.915 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:45:20.916 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@72ef8d7c
+ 12:45:23.920 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:45:23.920 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:45:28.921 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5da8648a
+ 12:45:31.925 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:45:31.925 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:45:36.926 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@299cc619
+ 12:45:39.930 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:45:39.930 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:45:44.931 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@212971c0
+ 12:45:47.935 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:45:47.935 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:45:52.936 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@d4b72b9
+ 12:45:55.940 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:45:55.940 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:46:00.941 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2f813fc7
+ 12:46:03.945 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:46:03.945 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:46:08.946 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@343e5377
+ 12:46:11.950 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:46:11.950 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:46:16.951 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@53f1a5c4
+ 12:46:19.955 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:46:19.955 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:46:24.956 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@12e97be
+ 12:46:27.959 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:46:27.960 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:46:32.961 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@581be579
+ 12:46:35.964 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:46:35.965 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:46:40.966 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@785d9a65
+ 12:46:43.968 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:46:43.968 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:46:48.969 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2fa55621
+ 12:46:51.973 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:46:51.973 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:46:56.974 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@124f4640
+ 12:46:59.978 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:46:59.978 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:47:04.979 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@26e1cde9
+ 12:47:07.982 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:47:07.982 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:47:12.983 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@336ad658
+ 12:47:15.986 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:47:15.986 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:47:20.987 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@65b4cc95
+ 12:47:23.991 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:47:23.991 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:47:28.992 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@158c4b3f
+ 12:47:31.995 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:47:31.996 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:47:36.997 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@73d5f425
+ 12:47:39.998 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:47:39.998 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:47:44.999 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@34c61ac1
+ 12:47:48.002 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:47:48.003 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:47:53.004 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6b881e6a
+ 12:47:56.007 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:47:56.008 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:48:01.009 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@59a10648
+ 12:48:04.010 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:48:04.010 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:48:09.011 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2b635882
+ 12:48:12.015 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:48:12.015 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:48:17.016 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@f7a62c9
+ 12:48:20.019 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:48:20.020 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:48:25.020 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@43d3583
+ 12:48:28.024 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:48:28.024 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:48:33.025 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@58e07d14
+ 12:48:36.029 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:48:36.029 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:48:41.030 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@cda17f2
+ 12:48:44.034 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:48:44.034 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:48:49.035 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5bfe0e90
+ 12:48:52.038 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:48:52.038 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:48:57.039 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@55dd3d35
+ 12:49:00.039 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:49:00.040 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:49:05.040 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@29c63059
+ 12:49:08.042 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:49:08.042 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:49:13.043 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7ce49698
+ 12:49:16.046 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:49:16.047 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:49:21.048 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@fd1f452
+ 12:49:24.051 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:49:24.052 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:49:29.053 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@433eb1a4
+ 12:49:32.056 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:49:32.057 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:49:37.057 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2574ee5c
+ 12:49:40.061 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:49:40.062 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:49:45.062 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@69d65388
+ 12:49:48.066 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:49:48.066 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:49:53.067 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@649e0ddd
+ 12:49:56.071 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:49:56.071 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:50:01.072 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4550f641
+ 12:50:04.075 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:50:04.075 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:50:09.076 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@247504fc
+ 12:50:12.080 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:50:12.080 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:50:17.081 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4eae9988
+ 12:50:20.085 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:50:20.085 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:50:25.086 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1179a822
+ 12:50:28.089 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:50:28.090 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:50:33.091 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@9c6476d
+ 12:50:36.094 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:50:36.095 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:50:41.095 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@739c4c63
+ 12:50:44.098 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:50:44.098 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:50:49.099 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4fd3fbd9
+ 12:50:52.102 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:50:52.103 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:50:57.103 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7b9422dc
+ 12:51:00.107 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:51:00.108 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:51:05.108 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7929660
+ 12:51:08.112 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:51:08.112 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:51:13.113 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@62e5f2e5
+ 12:51:16.117 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:51:16.117 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:51:21.118 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1fce670
+ 12:51:24.122 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:51:24.122 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:51:29.123 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@71c85382
+ 12:51:32.126 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:51:32.127 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:51:37.128 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3b9852c
+ 12:51:40.131 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:51:40.132 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:51:45.132 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@29af3e8c
+ 12:51:48.136 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:51:48.136 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:51:53.137 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@744791e2
+ 12:51:56.140 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:51:56.140 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:52:01.141 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@116f91be
+ 12:52:04.145 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:52:04.145 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:52:09.146 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e36aac9
+ 12:52:12.150 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:52:12.150 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:52:17.151 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@181016b8
+ 12:52:20.154 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:52:20.154 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:52:25.155 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1b55fd9d
+ 12:52:28.159 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:52:28.159 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:52:33.160 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@399958e5
+ 12:52:36.163 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:52:36.164 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:52:41.164 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@43721dc7
+ 12:52:44.168 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:52:44.169 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:52:49.169 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@33fa8005
+ 12:52:52.173 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:52:52.174 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:52:57.174 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5557ae89
+ 12:53:00.178 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:53:00.178 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:53:05.179 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@f109a49
+ 12:53:08.183 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:53:08.183 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:53:13.184 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5fe10273
+ 12:53:16.186 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:53:16.186 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:53:21.187 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@b175c3a
+ 12:53:24.190 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:53:24.191 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:53:29.191 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@56b8a59b
+ 12:53:32.194 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:53:32.194 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:53:37.195 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@25915bd3
+ 12:53:40.198 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:53:40.198 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:53:45.199 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4b97bcd8
+ 12:53:48.202 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:53:48.202 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:53:53.203 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@45aa13ac
+ 12:53:56.207 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:53:56.207 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:54:01.208 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@53acf1aa
+ 12:54:04.211 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:54:04.212 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:54:09.212 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4a5264fc
+ 12:54:12.214 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:54:12.214 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:54:17.215 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3a1ddb97
+ 12:54:20.218 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:54:20.219 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:54:25.220 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@16535b06
+ 12:54:28.223 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:54:28.223 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:54:33.224 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3900c890
+ 12:54:36.228 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:54:36.228 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:54:41.229 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@60fcf008
+ 12:54:44.233 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:54:44.233 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:54:49.234 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@821a616
+ 12:54:52.237 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:54:52.238 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:54:57.239 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@796ffaa1
+ 12:55:00.242 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:55:00.242 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:55:05.243 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2faa64fb
+ 12:55:08.246 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:55:08.246 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:55:13.247 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@77282fd9
+ 12:55:16.250 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:55:16.250 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:55:21.251 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4cde4020
+ 12:55:24.255 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:55:24.255 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:55:29.256 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5ea44a4e
+ 12:55:32.259 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:55:32.259 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:55:37.260 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6ed537f6
+ 12:55:40.264 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:55:40.264 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:55:45.265 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@791eba81
+ 12:55:48.269 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:55:48.269 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:55:53.270 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@653cc57
+ 12:55:56.270 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:55:56.271 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:56:01.271 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4a370921
+ 12:56:04.275 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:56:04.275 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 12:56:09.276 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1e5315ca
+ 12:56:12.278 [ServerSessionObserverThread]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
+ 12:56:12.278 [ServerSessionObserverThread]  ERROR s.w.f.c.thread.ServerSessionObserver[88] - Failed re-login to 47.129.51.147:6100 : Network connection failed
+ 13:50:48.955 [main]  INFO  scouterx.webapp.main.WebAppMain[270] - scouter webapp starting! Run-Mode:StandAlone
+ 13:50:49.019 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265
+ 13:50:49.028 [main]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@614ddd49 to 18.142.186.146:6100
+ 13:50:49.034 [main]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265, stack:
+ 13:50:49.036 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2d6eabae
+ 13:50:49.037 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@4e7dc304
+ 13:50:49.037 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@64729b1e
+ 13:50:49.037 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:3, scouterx.webapp.framework.client.net.TcpProxy@10bbd20a
+ 13:50:49.037 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@48503868
+ 13:50:49.037 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:5, scouterx.webapp.framework.client.net.TcpProxy@6895a785
+ 13:50:49.041 [main]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@27a5f880 to 18.142.186.146:6100
+ 13:50:49.067 [main]  INFO  scouterx.webapp.main.WebAppMain[223] - Successfully log in to 18.142.186.146:6100
+ 13:50:49.071 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@f5fb704 to 18.142.186.146:6100
+ 13:50:49.107 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@40a552a4 to 18.142.186.146:6100
+ 13:50:49.108 [main]  INFO  org.eclipse.jetty.util.log[192] - Logging initialized @823ms to org.eclipse.jetty.util.log.Slf4jLog
+ 13:50:49.286 [main]  INFO  org.eclipse.jetty.server.Server[372] - jetty-9.4.6.v20170531
+ 13:50:49.312 [main]  INFO  o.e.j.server.AbstractNCSARequestLog[230] - Opened /opt/SCOUTER/scouter/webapp/logs/http-request-2024_03_08.log
+ 13:50:49.320 [main]  INFO  org.eclipse.jetty.server.session[364] - DefaultSessionIdManager workerName=node0
+ 13:50:49.320 [main]  INFO  org.eclipse.jetty.server.session[369] - No SessionScavenger set, using defaults
+ 13:50:49.322 [main]  INFO  org.eclipse.jetty.server.session[149] - Scavenging every 600000ms
+ 13:50:49.980 [XLogThread-18.142.186.146:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@a9d0ad to 18.142.186.146:6100
+ 13:50:50.485 [main]  WARN  o.e.j.s.handler.ContextHandler.ROOT[2231] - unavailable
+org.glassfish.hk2.api.MultiException: A MultiException has 2 exceptions.  They are:
+1. java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+2. java.lang.IllegalStateException: Unable to perform operation: create on scouterx.webapp.framework.mapper.JerseyMapperProvider
+
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:392)
+	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:487)
+	at org.jvnet.hk2.internal.SingletonContext$1.compute(SingletonContext.java:83)
+	at org.jvnet.hk2.internal.SingletonContext$1.compute(SingletonContext.java:71)
+	at org.glassfish.hk2.utilities.cache.Cache$OriginThreadAwareFuture$1.call(Cache.java:97)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.glassfish.hk2.utilities.cache.Cache$OriginThreadAwareFuture.run(Cache.java:154)
+	at org.glassfish.hk2.utilities.cache.Cache.compute(Cache.java:199)
+	at org.jvnet.hk2.internal.SingletonContext.findOrCreate(SingletonContext.java:122)
+	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2126)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1491)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServices(ServiceLocatorImpl.java:818)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllInstances(AbstractHk2InjectionManager.java:194)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllInstances(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.ContextResolverFactory$ContextResolversConfigurator.postInit(ContextResolverFactory.java:93)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$2(ApplicationHandler.java:372)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:372)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$1(ApplicationHandler.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:315)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:282)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:178)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:370)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:272)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:452)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:419)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at scouterx.webapp.main.WebAppMain.main(WebAppMain.java:111)
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:655)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:558)
+	at scouterx.webapp.framework.mapper.JerseyMapperProvider.<clinit>(JerseyMapperProvider.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.makeMe(ReflectionHelper.java:1375)
+	at org.jvnet.hk2.internal.ClazzCreator.createMe(ClazzCreator.java:272)
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:366)
+	... 50 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.util.JacksonFeature
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 60 common frames omitted
+ 13:50:50.608 [main]  INFO  org.reflections.Reflections[232] - Reflections took 83 ms to scan 1 urls, producing 309 keys and 418 values 
+ 13:50:50.971 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7dfdb312 to 18.142.186.146:6100
+ 13:50:51.092 [XLogThread-18.142.186.146:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4a8521e8 to 18.142.186.146:6100
+ 14:36:50.519 [main]  INFO  scouterx.webapp.main.WebAppMain[270] - scouter webapp starting! Run-Mode:StandAlone
+ 14:36:50.576 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265
+ 14:36:50.588 [main]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@614ddd49 to 18.142.186.146:6100
+ 14:36:50.598 [main]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265, stack:
+ 14:36:50.600 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2d6eabae
+ 14:36:50.601 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@4e7dc304
+ 14:36:50.601 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@64729b1e
+ 14:36:50.601 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:3, scouterx.webapp.framework.client.net.TcpProxy@10bbd20a
+ 14:36:50.601 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@48503868
+ 14:36:50.601 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:5, scouterx.webapp.framework.client.net.TcpProxy@6895a785
+ 14:36:50.605 [main]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@27a5f880 to 18.142.186.146:6100
+ 14:36:50.630 [main]  INFO  scouterx.webapp.main.WebAppMain[223] - Successfully log in to 18.142.186.146:6100
+ 14:36:50.635 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7955092c to 18.142.186.146:6100
+ 14:36:50.643 [main]  INFO  org.eclipse.jetty.util.log[192] - Logging initialized @905ms to org.eclipse.jetty.util.log.Slf4jLog
+ 14:36:50.670 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@36afe24d to 18.142.186.146:6100
+ 14:36:50.823 [main]  INFO  org.eclipse.jetty.server.Server[372] - jetty-9.4.6.v20170531
+ 14:36:50.852 [main]  INFO  o.e.j.server.AbstractNCSARequestLog[230] - Opened /opt/SCOUTER/scouter/webapp/logs/http-request-2024_03_08.log
+ 14:36:50.860 [main]  INFO  org.eclipse.jetty.server.session[364] - DefaultSessionIdManager workerName=node0
+ 14:36:50.860 [main]  INFO  org.eclipse.jetty.server.session[369] - No SessionScavenger set, using defaults
+ 14:36:50.862 [main]  INFO  org.eclipse.jetty.server.session[149] - Scavenging every 600000ms
+ 14:36:51.535 [XLogThread-18.142.186.146:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@235a8062 to 18.142.186.146:6100
+ 14:36:52.155 [main]  WARN  o.e.j.s.handler.ContextHandler.ROOT[2231] - unavailable
+org.glassfish.hk2.api.MultiException: A MultiException has 2 exceptions.  They are:
+1. java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+2. java.lang.IllegalStateException: Unable to perform operation: create on scouterx.webapp.framework.mapper.JerseyMapperProvider
+
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:392)
+	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:487)
+	at org.jvnet.hk2.internal.SingletonContext$1.compute(SingletonContext.java:83)
+	at org.jvnet.hk2.internal.SingletonContext$1.compute(SingletonContext.java:71)
+	at org.glassfish.hk2.utilities.cache.Cache$OriginThreadAwareFuture$1.call(Cache.java:97)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.glassfish.hk2.utilities.cache.Cache$OriginThreadAwareFuture.run(Cache.java:154)
+	at org.glassfish.hk2.utilities.cache.Cache.compute(Cache.java:199)
+	at org.jvnet.hk2.internal.SingletonContext.findOrCreate(SingletonContext.java:122)
+	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2126)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.internalGetAllServiceHandles(ServiceLocatorImpl.java:1491)
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.getAllServices(ServiceLocatorImpl.java:818)
+	at org.glassfish.jersey.inject.hk2.AbstractHk2InjectionManager.getAllInstances(AbstractHk2InjectionManager.java:194)
+	at org.glassfish.jersey.inject.hk2.ImmediateHk2InjectionManager.getAllInstances(ImmediateHk2InjectionManager.java:54)
+	at org.glassfish.jersey.internal.ContextResolverFactory$ContextResolversConfigurator.postInit(ContextResolverFactory.java:93)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$2(ApplicationHandler.java:372)
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:3880)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:372)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$1(ApplicationHandler.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:315)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:282)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:178)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:370)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:272)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:452)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:419)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at scouterx.webapp.main.WebAppMain.main(WebAppMain.java:111)
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:655)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:558)
+	at scouterx.webapp.framework.mapper.JerseyMapperProvider.<clinit>(JerseyMapperProvider.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.glassfish.hk2.utilities.reflection.ReflectionHelper.makeMe(ReflectionHelper.java:1375)
+	at org.jvnet.hk2.internal.ClazzCreator.createMe(ClazzCreator.java:272)
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:366)
+	... 50 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.util.JacksonFeature
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 60 common frames omitted
+ 14:36:52.300 [main]  INFO  org.reflections.Reflections[232] - Reflections took 101 ms to scan 1 urls, producing 309 keys and 418 values 
+ 14:36:52.529 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@57ca9810 to 18.142.186.146:6100
+ 14:36:52.571 [XLogThread-18.142.186.146:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@503a9c74 to 18.142.186.146:6100

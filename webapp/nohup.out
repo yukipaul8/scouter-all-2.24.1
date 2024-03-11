@@ -1,0 +1,83 @@
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+08:17:22,210 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+08:17:22,211 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+08:17:22,211 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/opt/SCOUTER/scouter/webapp/scouter.webapp.jar!/logback.xml]
+08:17:22,224 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@cb644e - URL [jar:file:/opt/SCOUTER/scouter/webapp/scouter.webapp.jar!/logback.xml] is not of type file
+08:17:22,280 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+08:17:22,281 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+08:17:22,288 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+08:17:22,296 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:17:22,338 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+08:17:22,340 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_DAILY]
+08:17:22,347 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@327177752 - No compression will be used
+08:17:22,348 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@327177752 - Will use the pattern ./logs/webapp-%d{yyyy_MM_dd}.log for the active file
+08:17:22,351 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy_MM_dd' from file name pattern './logs/webapp-%d{yyyy_MM_dd}.log'.
+08:17:22,351 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+08:17:22,355 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sat Mar 09 08:17:22 UTC 2024
+08:17:22,356 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:17:22,357 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_DAILY] - Active log file name: ./logs/webapp-2024_03_09.log
+08:17:22,357 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_DAILY] - File property is set to [null]
+08:17:22,358 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+08:17:22,358 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_SIZE]
+08:17:22,360 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@56ef9176 - No compression will be used
+08:17:22,361 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:17:22,362 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE] - Active log file name: ./logs/webapp.log
+08:17:22,362 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE] - File property is set to [./logs/webapp.log]
+08:17:22,362 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+08:17:22,362 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_SIZE_DAILY]
+08:17:22,377 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1164371389 - No compression will be used
+08:17:22,378 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1164371389 - Will use the pattern ./logs/webapp-%d{yyyy_MM_dd}-%i.log for the active file
+08:17:22,379 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1ed4004b - The date pattern is 'yyyy_MM_dd' from file name pattern './logs/webapp-%d{yyyy_MM_dd}-%i.log'.
+08:17:22,379 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1ed4004b - Roll-over at midnight.
+08:17:22,381 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1ed4004b - Setting initial period to Sat Mar 09 08:17:22 UTC 2024
+08:17:22,382 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1ed4004b - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+08:17:22,382 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1ed4004b - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+08:17:22,384 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:17:22,385 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE_DAILY] - Active log file name: ./logs/webapp-2024_03_09-0.log
+08:17:22,385 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE_DAILY] - File property is set to [null]
+08:17:22,385 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+08:17:22,385 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+08:17:22,386 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE_DAILY] to Logger[ROOT]
+08:17:22,386 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+08:17:22,386 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@ff5b51f - Registering current configuration as safe fallback point
+
+ 08:17:22.392 [main]  INFO  scouterx.webapp.main.WebAppMain[270] - scouter webapp starting! Run-Mode:StandAlone
+ 08:17:22.459 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265
+ 08:17:22.469 [main]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@614ddd49 to 18.142.186.146:6100
+ 08:17:22.483 [main]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e853265, stack:
+ 08:17:22.488 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2d6eabae
+ 08:17:22.488 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@4e7dc304
+ 08:17:22.488 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@64729b1e
+ 08:17:22.489 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:3, scouterx.webapp.framework.client.net.TcpProxy@10bbd20a
+ 08:17:22.489 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@48503868
+ 08:17:22.489 [main]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:5, scouterx.webapp.framework.client.net.TcpProxy@6895a785
+ 08:17:22.492 [main]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@27a5f880 to 18.142.186.146:6100
+ 08:17:22.519 [main]  INFO  scouterx.webapp.main.WebAppMain[223] - Successfully log in to 18.142.186.146:6100
+ 08:17:22.526 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4d7d0ba2 to 18.142.186.146:6100
+ 08:17:22.550 [main]  INFO  org.eclipse.jetty.util.log[192] - Logging initialized @909ms to org.eclipse.jetty.util.log.Slf4jLog
+ 08:17:22.566 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@287e646 to 18.142.186.146:6100
+ 08:17:22.711 [main]  INFO  org.eclipse.jetty.server.Server[372] - jetty-9.4.6.v20170531
+ 08:17:22.737 [main]  INFO  o.e.j.server.AbstractNCSARequestLog[230] - Opened /opt/SCOUTER/scouter/webapp/logs/http-request-2024_03_09.log
+ 08:17:22.747 [main]  INFO  org.eclipse.jetty.server.session[364] - DefaultSessionIdManager workerName=node0
+ 08:17:22.747 [main]  INFO  org.eclipse.jetty.server.session[369] - No SessionScavenger set, using defaults
+ 08:17:22.749 [main]  INFO  org.eclipse.jetty.server.session[149] - Scavenging every 660000ms
+ 08:17:23.418 [XLogThread-18.142.186.146:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1ba44dfe to 18.142.186.146:6100
+ 08:17:24.115 [main]  INFO  o.h.validator.internal.util.Version[27] - HV000001: Hibernate Validator 5.1.3.Final
+ 08:17:24.408 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7b4c238b to 18.142.186.146:6100
+ 08:17:24.437 [XLogThread-18.142.186.146:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2698d073 to 18.142.186.146:6100
+ 08:17:24.666 [main]  INFO  o.e.j.server.handler.ContextHandler[788] - Started o.e.j.s.ServletContextHandler@5a6d30e2{/,null,AVAILABLE}
+ 08:17:24.687 [main]  INFO  o.e.jetty.server.AbstractConnector[280] - Started ServerConnector@7724704f{HTTP/1.1,[http/1.1]}{0.0.0.0:6188}
+ 08:17:24.694 [main]  INFO  org.eclipse.jetty.server.Server[444] - Started @3058ms
+System JRE version : 1.8.0_392
+#2tj0 08:18:10.286 [qtp1373810119-18]  ERROR s.w.f.e.m.GenericExceptionMapper[80] - [WebApplicationException] 404 - HTTP 404 Not Found, [uri]
+#2tj1 08:19:14.552 [qtp1373810119-19]  ERROR s.w.f.e.m.GenericExceptionMapper[80] - [WebApplicationException] 404 - HTTP 404 Not Found, [uri]index.html
+#2tj2 08:19:22.668 [qtp1373810119-21]  ERROR s.w.f.e.m.GenericExceptionMapper[80] - [WebApplicationException] 404 - HTTP 404 Not Found, [uri]exweb
+#2tj3 08:19:32.322 [qtp1373810119-17]  ERROR s.w.f.e.m.GenericExceptionMapper[80] - [WebApplicationException] 404 - HTTP 404 Not Found, [uri]extweb
+#2tj4 08:19:37.673 [qtp1373810119-18]  ERROR s.w.f.e.m.GenericExceptionMapper[80] - [WebApplicationException] 404 - HTTP 404 Not Found, [uri]extweb/index.html

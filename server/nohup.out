@@ -1,0 +1,60 @@
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+System JRE version : 1.8.0_392
+08:16:35,192 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+08:16:35,192 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+08:16:35,192 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/opt/SCOUTER/scouter/server/./lib/scouter-webapp-2.20.0.jar!/logback.xml]
+08:16:35,209 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6b249599 - URL [jar:file:/opt/SCOUTER/scouter/server/./lib/scouter-webapp-2.20.0.jar!/logback.xml] is not of type file
+08:16:35,274 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+08:16:35,275 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+08:16:35,283 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+08:16:35,289 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:16:35,319 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+08:16:35,322 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_DAILY]
+08:16:35,328 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2128208450 - No compression will be used
+08:16:35,329 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2128208450 - Will use the pattern ./logs/webapp-%d{yyyy_MM_dd}.log for the active file
+08:16:35,333 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy_MM_dd' from file name pattern './logs/webapp-%d{yyyy_MM_dd}.log'.
+08:16:35,333 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+08:16:35,336 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sat Mar 09 08:16:35 UTC 2024
+08:16:35,337 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:16:35,338 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_DAILY] - Active log file name: ./logs/webapp-2024_03_09.log
+08:16:35,338 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_DAILY] - File property is set to [null]
+08:16:35,339 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+08:16:35,339 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_SIZE]
+08:16:35,340 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@52f5da5c - No compression will be used
+08:16:35,342 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:16:35,343 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE] - Active log file name: ./logs/webapp.log
+08:16:35,343 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE] - File property is set to [./logs/webapp.log]
+08:16:35,343 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+08:16:35,343 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_SIZE_DAILY]
+08:16:35,346 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1869722056 - No compression will be used
+08:16:35,346 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1869722056 - Will use the pattern ./logs/webapp-%d{yyyy_MM_dd}-%i.log for the active file
+08:16:35,347 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@203679e2 - The date pattern is 'yyyy_MM_dd' from file name pattern './logs/webapp-%d{yyyy_MM_dd}-%i.log'.
+08:16:35,347 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@203679e2 - Roll-over at midnight.
+08:16:35,347 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@203679e2 - Setting initial period to Sat Mar 09 08:16:35 UTC 2024
+08:16:35,348 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@203679e2 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+08:16:35,348 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@203679e2 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+08:16:35,349 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:16:35,350 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE_DAILY] - Active log file name: ./logs/webapp-2024_03_09-0.log
+08:16:35,350 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE_DAILY] - File property is set to [null]
+08:16:35,350 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+08:16:35,350 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+08:16:35,351 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE_DAILY] to Logger[ROOT]
+08:16:35,351 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+08:16:35,351 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@114c4454 - Registering current configuration as safe fallback point
+
+ 08:16:35.360 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.util.log[192] - Logging initialized @1512ms to org.eclipse.jetty.util.log.Slf4jLog
+ 08:16:35.449 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.Server[372] - jetty-9.4.6.v20170531
+ 08:16:35.481 [scouter.server.http.HttpServer]  INFO  o.e.j.server.AbstractNCSARequestLog[230] - Opened /opt/SCOUTER/scouter/server/logs/http-request-2024_03_09.log
+ 08:16:35.500 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[364] - DefaultSessionIdManager workerName=node0
+ 08:16:35.501 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[369] - No SessionScavenger set, using defaults
+ 08:16:35.504 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[149] - Scavenging every 660000ms
+ 08:16:35.508 [scouter.server.http.HttpServer]  INFO  o.e.j.server.handler.ContextHandler[788] - Started o.e.j.s.ServletContextHandler@4010cf43{/,null,AVAILABLE}
+ 08:16:35.523 [scouter.server.http.HttpServer]  INFO  o.e.jetty.server.AbstractConnector[280] - Started ServerConnector@3eb603cc{HTTP/1.1,[http/1.1]}{0.0.0.0:6180}
+ 08:16:35.523 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.Server[444] - Started @1678ms

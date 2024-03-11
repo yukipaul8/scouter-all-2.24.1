@@ -1,0 +1,2 @@
+112.204.169.166 - - [11/Mar/2024:01:25:26 +0000] "GET /extweb/index.html HTTP/1.1" 200 98 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+112.204.169.166 - - [11/Mar/2024:01:25:46 +0000] "GET /favicon.ico HTTP/1.1" 404 327 "http://18.142.186.146:6188/extweb/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"

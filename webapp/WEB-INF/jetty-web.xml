@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+
+<Call name="addConnector">
+  <Arg>
+    <New class="org.eclipse.jetty.server.ServerConnector">
+      <Arg name="server">
+        <Ref refid="Server" />
+      </Arg>
+      <Set name="host">47.129.51.147</Set> <!-- Set your specific IP address -->
+      <Set name="port">6180</Set> <!-- Set your specific HTTP port -->
+    </New>
+  </Arg>
+</Call>
+
+
+</Configure>

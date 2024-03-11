@@ -1,0 +1,18 @@
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+Scouter Batch Agent Version 2.20.0 2023-05-29 05:14 GMT
+20240308 03:45:07 [SCOUTER] scouter_enabled=true
+20240308 03:45:07 [SCOUTER] scouter_standalone=false
+20240308 03:45:07 [SCOUTER] sql_enabled=true
+20240308 03:45:07 [SCOUTER] sfa_dump_enabled=true
+20240308 03:45:07 [SCOUTER] sfa_dump_dir=/opt/SCOUTER/scouter/agent.batch/dump
+20240308 03:45:07 [A01] Scouter Batch Agent Version 2.20.0 2023-05-29 05:14 GMT
+20240308 03:45:07 [SCOUTER] LOG: delete directory - /opt/SCOUTER/scouter/agent.batch/./dump
+20240308 03:49:06 [A130] TCP unknown cmd=OBJECT_RESET_CACHE
+20240308 03:52:24 [A130] TCP unknown cmd=OBJECT_RESET_CACHE

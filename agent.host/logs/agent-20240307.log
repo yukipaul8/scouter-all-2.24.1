@@ -1,0 +1,27 @@
+20240307 09:00:22 Version 2.20.0 2023-05-29 05:14 GMT
+20240307 09:00:22 [A113] Counter Collector Started (#6)
+20240307 09:00:22 [A10] host agent boot seed=xklgc28psr
+20240307 09:00:22 [A01] Scouter Host Agent Version 2.20.0 2023-05-29 05:14 GMT
+20240307 09:00:23 [A119] Agent UDP local.port=0
+20240307 09:00:24 [INFO] Num of Cpu Cores : 2
+20240307 09:18:17 Version 2.20.0 2023-05-29 05:14 GMT
+20240307 09:18:17 [A113] Counter Collector Started (#6)
+20240307 09:18:17 [A10] host agent boot seed=xndoc39jpl
+20240307 09:18:17 [A01] Scouter Host Agent Version 2.20.0 2023-05-29 05:14 GMT
+20240307 09:18:18 [A119] Agent UDP local.port=0
+20240307 09:18:19 [INFO] Num of Cpu Cores : 2
+20240307 09:19:13 [A130] TCP unknown cmd=OBJECT_RESET_CACHE
+20240307 12:51:32 Version 2.20.0 2023-05-29 05:14 GMT
+20240307 12:51:32 [A113] Counter Collector Started (#6)
+20240307 12:51:32 [A10] host agent boot seed=x12l4cfg296
+20240307 12:51:32 [A01] Scouter Host Agent Version 2.20.0 2023-05-29 05:14 GMT
+20240307 12:51:33 [A119] Agent UDP local.port=0
+20240307 12:51:33 [INFO] Num of Cpu Cores : 2
+20240307 12:51:51 Version 2.20.0 2023-05-29 05:14 GMT
+20240307 12:51:51 [A113] Counter Collector Started (#6)
+20240307 12:51:51 [A10] host agent boot seed=x12r4cfglau
+20240307 12:51:51 [A01] Scouter Host Agent Version 2.20.0 2023-05-29 05:14 GMT
+20240307 12:51:52 [A119] Agent UDP local.port=0
+20240307 12:51:53 [INFO] Num of Cpu Cores : 2
+20240307 12:53:06 [A130] TCP unknown cmd=OBJECT_RESET_CACHE
+20240308 00:00:01 [A130] TCP unknown cmd=OBJECT_RESET_CACHE

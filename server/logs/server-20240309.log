@@ -1,0 +1,426 @@
+20240309 02:54:34 [S178] Server Shutdown
+20240309 02:54:34 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@942a29c ...
+20240309 02:54:34 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@1ed6388a ...
+20240309 02:54:34 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@5a45133e ...
+20240309 04:12:58 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240309 04:12:58 [PID]16176
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240309 04:12:58 Load Account Group File
+20240309 04:12:58 Load Account File
+20240309 04:12:58 Load Account Group File
+20240309 04:12:58 udp listen 0.0.0.0:6100
+20240309 04:12:58 	udp_host=0.0.0.0
+20240309 04:12:58 	udp_port=6100
+20240309 04:12:58 	udp_buffer=65535
+20240309 04:12:58 Load Account File
+20240309 04:12:58 	udp_so_rcvbuf=4194304
+20240309 04:12:59 [S104] New OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:12:59.004 {detected=tomcat,ADC=false}
+20240309 04:12:59 	tcp_port=6100
+20240309 04:12:59 	cp_agent_so_timeout=60000
+20240309 04:12:59 	cp_client_so_timeout=8000
+20240309 04:12:59 [S104] New OBJECT  objType=tomcat objHash=zd7omth objName=/MT-SIT-WOI/MT-SIT-WOI-Router-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:12:59.147 {detected=tomcat,ADC=false}
+20240309 04:12:59 [S104] New OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:12:59.404 {detected=tomcat,ADC=false}
+20240309 04:12:59 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 04:12:59.83 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 04:13:00 [S104] New OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 04:13:00.076 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240309 04:13:00 [S104] New OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 04:13:00.183 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240309 04:13:00 [S104] New OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:13:00.295 {detected=tomcat,ADC=false}
+20240309 04:13:00 [S104] New OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:13:00.304 {detected=tomcat,ADC=false}
+20240309 04:13:00 [S104] New OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:13:00.305 {detected=tomcat,ADC=false}
+20240309 04:13:00 [S104] New OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:13:00.305 {detected=tomcat,ADC=false}
+20240309 04:13:00 [S104] New OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:13:00.305 {detected=tomcat,ADC=false}
+20240309 04:13:00 [S104] New OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 04:13:00.306 {detected=tomcat,ADC=false}
+20240309 04:13:00 [S145] GeoIP db file is not readable : /opt/SCOUTER/scouter/server/conf/GeoLiteCity.dat
+20240309 04:13:03 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 04:13:03 [S215] Alert rule detected : ErrorRate.alert
+20240309 04:13:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 04:13:04 PLUG-IN : scouter.server.plugin.IAlert loaded #x4c3vff
+20240309 04:13:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 04:13:04 PLUG-IN : scouter.server.plugin.ICounter loaded #x12p8vfp
+20240309 04:13:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 04:13:04 PLUG-IN : scouter.server.plugin.IObject loaded #xmvu63g
+20240309 04:13:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 04:13:04 PLUG-IN : scouter.server.plugin.IXLog loaded #xeipkua
+20240309 04:13:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 04:13:04 PLUG-IN : scouter.server.plugin.IXLog loaded #x1e0et05
+20240309 04:13:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 04:13:04 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #xjjn0as
+20240309 04:13:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 04:13:04 PLUG-IN : scouter.server.plugin.ISummary loaded #xlskfaf
+20240309 07:41:03 [S178] Server Shutdown
+20240309 07:41:03 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@70e9c95d ...
+20240309 07:41:03 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@4d5650ae ...
+20240309 07:41:03 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@a38c7fe ...
+20240309 07:41:20 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240309 07:41:20 [PID]20474
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240309 07:41:20 Load Account Group File
+20240309 07:41:20 Load Account File
+20240309 07:41:20 Load Account Group File
+20240309 07:41:20 udp listen 0.0.0.0:6100
+20240309 07:41:20 	udp_host=0.0.0.0
+20240309 07:41:20 	udp_port=6100
+20240309 07:41:20 	udp_buffer=65535
+20240309 07:41:20 	udp_so_rcvbuf=4194304
+20240309 07:41:20 Load Account File
+20240309 07:41:20 	tcp_port=6100
+20240309 07:41:20 	cp_agent_so_timeout=60000
+20240309 07:41:20 	cp_client_so_timeout=8000
+20240309 07:41:20 [S104] New OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:20.462 {detected=tomcat,ADC=false}
+20240309 07:41:20 [S104] New OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:20.715 {detected=tomcat,ADC=false}
+20240309 07:41:20 [S104] New OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:20.715 {detected=tomcat,ADC=false}
+20240309 07:41:20 [S104] New OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:20.715 {detected=tomcat,ADC=false}
+20240309 07:41:20 [S104] New OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:20.715 {detected=tomcat,ADC=false}
+20240309 07:41:20 [S104] New OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:20.716 {detected=tomcat,ADC=false}
+20240309 07:41:20 [S104] New OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:20.716 {detected=tomcat,ADC=false}
+20240309 07:41:20 [HTTP] Failed to start http server
+java.net.BindException: Address already in use
+	sun.nio.ch.Net.bind0(Native Method)
+	sun.nio.ch.Net.bind(Net.java:461)
+	sun.nio.ch.Net.bind(Net.java:453)
+	sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:298)
+	org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	org.eclipse.jetty.server.Server.doStart(Server.java:431)
+	org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	scouter.server.http.HttpServer.run(HttpServer.java:125)
+20240309 07:41:21 [S104] New OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 07:41:21.157 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240309 07:41:21 [S104] New OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:21.215 {detected=tomcat,ADC=false}
+20240309 07:41:21 [S145] GeoIP db file is not readable : /opt/SCOUTER/scouter/server/conf/GeoLiteCity.dat
+20240309 07:41:21 [S104] New OBJECT  objType=tomcat objHash=zd7omth objName=/MT-SIT-WOI/MT-SIT-WOI-Router-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:41:21.483 {detected=tomcat,ADC=false}
+20240309 07:41:21 [S104] New OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 07:41:21.942 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240309 07:41:21 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 07:41:21.988 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 07:41:25 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:41:25 [S215] Alert rule detected : ErrorRate.alert
+20240309 07:41:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:41:25 PLUG-IN : scouter.server.plugin.IAlert loaded #xtuuvkl
+20240309 07:41:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:41:25 PLUG-IN : scouter.server.plugin.ICounter loaded #xlqvku7
+20240309 07:41:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:41:25 PLUG-IN : scouter.server.plugin.IObject loaded #x2ml5ii
+20240309 07:41:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:41:25 PLUG-IN : scouter.server.plugin.IXLog loaded #x1tacgp9
+20240309 07:41:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:41:25 PLUG-IN : scouter.server.plugin.IXLog loaded #x113b9qs
+20240309 07:41:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:41:25 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x8n7j3j
+20240309 07:41:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:41:25 PLUG-IN : scouter.server.plugin.ISummary loaded #xd7gj25
+20240309 07:43:12 [S178] Server Shutdown
+20240309 07:43:12 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@6221a451 ...
+20240309 07:43:12 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@52719fb6 ...
+20240309 07:43:12 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@3012646b ...
+20240309 07:43:20 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240309 07:43:20 [PID]20645
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240309 07:43:20 Load Account Group File
+20240309 07:43:20 Load Account File
+20240309 07:43:20 Load Account Group File
+20240309 07:43:20 Load Account File
+20240309 07:43:20 udp listen 0.0.0.0:6100
+20240309 07:43:20 	udp_host=0.0.0.0
+20240309 07:43:20 	udp_port=6100
+20240309 07:43:20 	udp_buffer=65535
+20240309 07:43:20 	udp_so_rcvbuf=4194304
+20240309 07:43:20 [S104] New OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:20.55 {detected=tomcat,ADC=false}
+20240309 07:43:20 [S104] New OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:20.702 {detected=tomcat,ADC=false}
+20240309 07:43:20 [S104] New OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:20.702 {detected=tomcat,ADC=false}
+20240309 07:43:20 [S104] New OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:20.703 {detected=tomcat,ADC=false}
+20240309 07:43:20 [S104] New OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:20.703 {detected=tomcat,ADC=false}
+20240309 07:43:20 [S104] New OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:20.703 {detected=tomcat,ADC=false}
+20240309 07:43:20 [S104] New OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:20.703 {detected=tomcat,ADC=false}
+20240309 07:43:20 	tcp_port=6100
+20240309 07:43:20 	cp_agent_so_timeout=60000
+20240309 07:43:20 	cp_client_so_timeout=8000
+20240309 07:43:21 [HTTP] Failed to start http server
+java.net.BindException: Address already in use
+	sun.nio.ch.Net.bind0(Native Method)
+	sun.nio.ch.Net.bind(Net.java:461)
+	sun.nio.ch.Net.bind(Net.java:453)
+	sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:298)
+	org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	org.eclipse.jetty.server.Server.doStart(Server.java:431)
+	org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	scouter.server.http.HttpServer.run(HttpServer.java:125)
+20240309 07:43:21 [S104] New OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:21.302 {detected=tomcat,ADC=false}
+20240309 07:43:21 [S145] GeoIP db file is not readable : /opt/SCOUTER/scouter/server/conf/GeoLiteCity.dat
+20240309 07:43:21 [S104] New OBJECT  objType=tomcat objHash=zd7omth objName=/MT-SIT-WOI/MT-SIT-WOI-Router-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 07:43:21.464 {detected=tomcat,ADC=false}
+20240309 07:43:21 [S104] New OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 07:43:21.476 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240309 07:43:22 [S104] New OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 07:43:22.129 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240309 07:43:22 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 07:43:22.257 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 07:43:25 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:43:25 [S215] Alert rule detected : ErrorRate.alert
+20240309 07:43:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:43:25 PLUG-IN : scouter.server.plugin.IAlert loaded #x1pht0n5
+20240309 07:43:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:43:25 PLUG-IN : scouter.server.plugin.ICounter loaded #x15i5a5j
+20240309 07:43:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:43:25 PLUG-IN : scouter.server.plugin.IObject loaded #xmmatap
+20240309 07:43:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:43:25 PLUG-IN : scouter.server.plugin.IXLog loaded #x1gc5cj1
+20240309 07:43:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:43:25 PLUG-IN : scouter.server.plugin.IXLog loaded #x1q3qmom
+20240309 07:43:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:43:25 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x1ecsupk
+20240309 07:43:25 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 07:43:25 PLUG-IN : scouter.server.plugin.ISummary loaded #x1t40l0b
+20240309 07:55:51 [S105] Update OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=18.142.186.146 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 07:55:51.183 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 07:55:53 [S105] Update OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 07:55:53.871 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 08:08:06 [S178] Server Shutdown
+20240309 08:08:06 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@5e600dd5 ...
+20240309 08:08:06 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@576d5deb ...
+20240309 08:08:06 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@5d534f5d ...
+20240309 08:08:13 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240309 08:08:13 [PID]21701
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240309 08:08:13 Load Account Group File
+20240309 08:08:13 Load Account File
+20240309 08:08:13 Load Account Group File
+20240309 08:08:13 Load Account File
+20240309 08:08:13 udp listen 0.0.0.0:6100
+20240309 08:08:13 	udp_host=0.0.0.0
+20240309 08:08:13 	udp_port=6100
+20240309 08:08:13 	udp_buffer=65535
+20240309 08:08:13 	udp_so_rcvbuf=4194304
+20240309 08:08:13 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:08:13.84 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 08:08:13 [S104] New OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:13.841 {detected=tomcat,ADC=false}
+20240309 08:08:13 [S104] New OBJECT  objType=tomcat objHash=zd7omth objName=/MT-SIT-WOI/MT-SIT-WOI-Router-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:13.99 {detected=tomcat,ADC=false}
+20240309 08:08:14 	tcp_port=6100
+20240309 08:08:14 	cp_agent_so_timeout=60000
+20240309 08:08:14 	cp_client_so_timeout=8000
+20240309 08:08:14 [S145] GeoIP db file is not readable : /opt/SCOUTER/scouter/server/conf/GeoLiteCity.dat
+20240309 08:08:14 [S104] New OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:08:14.434 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240309 08:08:15 [S104] New OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:15.069 {detected=tomcat,ADC=false}
+20240309 08:08:15 [S104] New OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:15.228 {detected=tomcat,ADC=false}
+20240309 08:08:15 [S104] New OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:15.23 {detected=tomcat,ADC=false}
+20240309 08:08:15 [S104] New OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:15.23 {detected=tomcat,ADC=false}
+20240309 08:08:15 [S104] New OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:15.23 {detected=tomcat,ADC=false}
+20240309 08:08:15 [S104] New OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:15.23 {detected=tomcat,ADC=false}
+20240309 08:08:15 [S104] New OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:08:15.23 {detected=tomcat,ADC=false}
+20240309 08:08:15 [S104] New OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:08:15.451 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240309 08:08:18 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:08:18 [S215] Alert rule detected : ErrorRate.alert
+20240309 08:08:19 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:08:19 PLUG-IN : scouter.server.plugin.IAlert loaded #xh4l1qt
+20240309 08:08:19 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:08:19 PLUG-IN : scouter.server.plugin.ICounter loaded #xk2vil8
+20240309 08:08:19 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:08:19 PLUG-IN : scouter.server.plugin.IObject loaded #x2fer7j
+20240309 08:08:19 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:08:19 PLUG-IN : scouter.server.plugin.IXLog loaded #xdih0tm
+20240309 08:08:19 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:08:19 PLUG-IN : scouter.server.plugin.IXLog loaded #x4407b1
+20240309 08:08:19 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:08:19 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x9l7hs3
+20240309 08:08:19 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:08:19 PLUG-IN : scouter.server.plugin.ISummary loaded #x1eqkkgt
+20240309 08:10:30 [S178] Server Shutdown
+20240309 08:10:30 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@4f80542f ...
+20240309 08:10:30 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@60bd273d ...
+20240309 08:10:30 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@121314f7 ...
+20240309 08:10:40 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240309 08:10:40 [PID]21884
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240309 08:10:40 Load Account Group File
+20240309 08:10:40 Load Account File
+20240309 08:10:40 Load Account Group File
+20240309 08:10:40 Load Account File
+20240309 08:10:40 udp listen 0.0.0.0:6100
+20240309 08:10:40 	udp_host=0.0.0.0
+20240309 08:10:40 	udp_port=6100
+20240309 08:10:40 	udp_buffer=65535
+20240309 08:10:40 	udp_so_rcvbuf=4194304
+20240309 08:10:40 	tcp_port=6100
+20240309 08:10:40 	cp_agent_so_timeout=60000
+20240309 08:10:40 	cp_client_so_timeout=8000
+20240309 08:10:40 [S104] New OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:10:40.836 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240309 08:10:41 [S104] New OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:41.163 {detected=tomcat,ADC=false}
+20240309 08:10:41 [S104] New OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:41.326 {detected=tomcat,ADC=false}
+20240309 08:10:41 [S104] New OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:41.327 {detected=tomcat,ADC=false}
+20240309 08:10:41 [S104] New OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:41.327 {detected=tomcat,ADC=false}
+20240309 08:10:41 [S104] New OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:41.326 {detected=tomcat,ADC=false}
+20240309 08:10:41 [S104] New OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:41.327 {detected=tomcat,ADC=false}
+20240309 08:10:41 [S104] New OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:41.329 {detected=tomcat,ADC=false}
+20240309 08:10:41 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:10:41.688 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 08:10:41 [S104] New OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:41.826 {detected=tomcat,ADC=false}
+20240309 08:10:42 [S145] GeoIP db file is not readable : /opt/SCOUTER/scouter/server/conf/GeoLiteCity.dat
+20240309 08:10:42 [S104] New OBJECT  objType=tomcat objHash=zd7omth objName=/MT-SIT-WOI/MT-SIT-WOI-Router-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:10:42.092 {detected=tomcat,ADC=false}
+20240309 08:10:42 [S104] New OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:10:42.175 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240309 08:10:45 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:10:45 [S215] Alert rule detected : ErrorRate.alert
+20240309 08:10:45 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:10:45 PLUG-IN : scouter.server.plugin.IAlert loaded #xq8s0rm
+20240309 08:10:45 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:10:45 PLUG-IN : scouter.server.plugin.ICounter loaded #x17v9lhi
+20240309 08:10:45 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:10:45 PLUG-IN : scouter.server.plugin.IObject loaded #x1rchsc7
+20240309 08:10:45 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:10:45 PLUG-IN : scouter.server.plugin.IXLog loaded #xlgemkr
+20240309 08:10:45 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:10:45 PLUG-IN : scouter.server.plugin.IXLog loaded #x1kinjru
+20240309 08:10:45 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:10:45 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x1gs19qa
+20240309 08:10:45 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:10:45 PLUG-IN : scouter.server.plugin.ISummary loaded #xsi9srk
+20240309 08:11:34 [S178] Server Shutdown
+20240309 08:11:34 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@6340e5f0 ...
+20240309 08:11:34 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@45099dd3 ...
+20240309 08:11:34 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@13e344d ...
+20240309 08:12:22 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240309 08:12:22 [PID]22048
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240309 08:12:22 Load Account Group File
+20240309 08:12:22 Load Account File
+20240309 08:12:22 Load Account Group File
+20240309 08:12:22 udp listen 0.0.0.0:6100
+20240309 08:12:22 	udp_host=0.0.0.0
+20240309 08:12:22 	udp_port=6100
+20240309 08:12:22 	udp_buffer=65535
+20240309 08:12:22 	udp_so_rcvbuf=4194304
+20240309 08:12:22 Load Account File
+20240309 08:12:22 	tcp_port=6100
+20240309 08:12:22 	cp_agent_so_timeout=60000
+20240309 08:12:22 	cp_client_so_timeout=8000
+20240309 08:12:23 [S145] GeoIP db file is not readable : /opt/SCOUTER/scouter/server/conf/GeoLiteCity.dat
+20240309 08:12:23 [S104] New OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:23.129 {detected=tomcat,ADC=false}
+20240309 08:12:23 [S104] New OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:23.403 {detected=tomcat,ADC=false}
+20240309 08:12:23 [S104] New OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:23.403 {detected=tomcat,ADC=false}
+20240309 08:12:23 [S104] New OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:23.403 {detected=tomcat,ADC=false}
+20240309 08:12:23 [S104] New OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:23.403 {detected=tomcat,ADC=false}
+20240309 08:12:23 [S104] New OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:23.403 {detected=tomcat,ADC=false}
+20240309 08:12:23 [S104] New OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:23.404 {detected=tomcat,ADC=false}
+20240309 08:12:23 [S104] New OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:12:23.598 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240309 08:12:23 [S104] New OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:23.903 {detected=tomcat,ADC=false}
+20240309 08:12:24 [S104] New OBJECT  objType=tomcat objHash=zd7omth objName=/MT-SIT-WOI/MT-SIT-WOI-Router-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:12:24.103 {detected=tomcat,ADC=false}
+20240309 08:12:24 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:12:24.418 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 08:12:24 [S104] New OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:12:24.829 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240309 08:12:27 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:12:27 [S215] Alert rule detected : ErrorRate.alert
+20240309 08:12:27 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:12:27 PLUG-IN : scouter.server.plugin.IAlert loaded #x19v4gse
+20240309 08:12:27 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:12:27 PLUG-IN : scouter.server.plugin.ICounter loaded #x783bko
+20240309 08:12:27 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:12:27 PLUG-IN : scouter.server.plugin.IObject loaded #xlekv6f
+20240309 08:12:27 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:12:27 PLUG-IN : scouter.server.plugin.IXLog loaded #x1k65639
+20240309 08:12:27 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:12:27 PLUG-IN : scouter.server.plugin.IXLog loaded #x1904qq2
+20240309 08:12:27 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:12:27 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #xajgav1
+20240309 08:12:27 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:12:27 PLUG-IN : scouter.server.plugin.ISummary loaded #x1gsosv1
+20240309 08:16:00 [S178] Server Shutdown
+20240309 08:16:00 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@25641d39 ...
+20240309 08:16:00 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@7b36aa0c ...
+20240309 08:16:00 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@5824a83d ...
+20240309 08:16:34 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240309 08:16:34 [PID]22265
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240309 08:16:34 Load Account Group File
+20240309 08:16:34 Load Account File
+20240309 08:16:34 Load Account Group File
+20240309 08:16:34 Load Account File
+20240309 08:16:34 udp listen 0.0.0.0:6100
+20240309 08:16:34 	udp_host=0.0.0.0
+20240309 08:16:34 	udp_port=6100
+20240309 08:16:34 	udp_buffer=65535
+20240309 08:16:34 	udp_so_rcvbuf=4194304
+20240309 08:16:35 	tcp_port=6100
+20240309 08:16:35 	cp_agent_so_timeout=60000
+20240309 08:16:35 	cp_client_so_timeout=8000
+20240309 08:16:35 [S104] New OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:16:35.221 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240309 08:16:35 [S104] New OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:35.291 {detected=tomcat,ADC=false}
+20240309 08:16:35 [S104] New OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:35.476 {detected=tomcat,ADC=false}
+20240309 08:16:35 [S104] New OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:35.479 {detected=tomcat,ADC=false}
+20240309 08:16:35 [S104] New OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:35.479 {detected=tomcat,ADC=false}
+20240309 08:16:35 [S104] New OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:35.479 {detected=tomcat,ADC=false}
+20240309 08:16:35 [S104] New OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:35.479 {detected=tomcat,ADC=false}
+20240309 08:16:35 [S104] New OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:35.479 {detected=tomcat,ADC=false}
+20240309 08:16:35 [S104] New OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:35.98 {detected=tomcat,ADC=false}
+20240309 08:16:36 [S145] GeoIP db file is not readable : /opt/SCOUTER/scouter/server/conf/GeoLiteCity.dat
+20240309 08:16:36 [S104] New OBJECT  objType=tomcat objHash=zd7omth objName=/MT-SIT-WOI/MT-SIT-WOI-Router-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-09 08:16:36.231 {detected=tomcat,ADC=false}
+20240309 08:16:36 [S104] New OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:16:36.801 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240309 08:16:37 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-09 08:16:37.514 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240309 08:16:39 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:16:39 [S215] Alert rule detected : ErrorRate.alert
+20240309 08:16:40 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:16:40 PLUG-IN : scouter.server.plugin.IAlert loaded #x2ndlmj
+20240309 08:16:40 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:16:40 PLUG-IN : scouter.server.plugin.ICounter loaded #x15qnti7
+20240309 08:16:40 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:16:40 PLUG-IN : scouter.server.plugin.IObject loaded #xfemp12
+20240309 08:16:40 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:16:40 PLUG-IN : scouter.server.plugin.IXLog loaded #x1ud4g68
+20240309 08:16:40 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:16:40 PLUG-IN : scouter.server.plugin.IXLog loaded #xat21u8
+20240309 08:16:40 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:16:40 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x19uvp6e
+20240309 08:16:40 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240309 08:16:40 PLUG-IN : scouter.server.plugin.ISummary loaded #x1hgbubs
+20240310 00:00:00 [S105] Update OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-10 00:00:00.706 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240310 00:00:00 [S105] Update OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-10 00:00:00.91 {detected=tomcat,ADC=false}
+20240310 00:00:00 [S105] Update OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-10 00:00:00.996 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240310 00:00:01 [S105] Update OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-10 00:00:01.128 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240310 00:00:01 [S105] Update OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-10 00:00:01.255 {detected=tomcat,ADC=false}
+20240310 00:00:01 [S105] Update OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-10 00:00:01.255 {detected=tomcat,ADC=false}
+20240310 00:00:01 [S105] Update OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-10 00:00:01.255 {detected=tomcat,ADC=false}
+20240310 00:00:01 [S105] Update OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-10 00:00:01.255 {detected=tomcat,ADC=false}
+20240310 00:00:01 [S105] Update OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-10 00:00:01.255 {detected=tomcat,ADC=false}
+20240310 00:00:01 [S105] Update OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-10 00:00:01.255 {detected=tomcat,ADC=false}
+20240310 00:00:01 [S105] Update OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-10 00:00:01.255 {detected=tomcat,ADC=false}

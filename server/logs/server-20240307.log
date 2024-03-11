@@ -1,0 +1,152 @@
+20240307 08:53:03 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240307 08:53:03 [PID]5328
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240307 08:53:03 Load Account Group File
+20240307 08:53:03 Load Account File
+20240307 08:53:03 Load Account Group File
+20240307 08:53:03 udp listen 0.0.0.0:6100
+20240307 08:53:03 	udp_host=0.0.0.0
+20240307 08:53:03 	udp_port=6100
+20240307 08:53:03 	udp_buffer=65535
+20240307 08:53:03 	udp_so_rcvbuf=4194304
+20240307 08:53:03 Load Account File
+20240307 08:53:03 	tcp_port=6100
+20240307 08:53:03 	cp_agent_so_timeout=60000
+20240307 08:53:03 	cp_client_so_timeout=8000
+20240307 08:53:08 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 08:53:08 [S215] Alert rule detected : ErrorRate.alert
+20240307 08:53:08 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 08:53:08 PLUG-IN : scouter.server.plugin.IAlert loaded #xu6afpi
+20240307 08:53:08 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 08:53:08 PLUG-IN : scouter.server.plugin.ICounter loaded #x1vf7f1r
+20240307 08:53:08 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 08:53:08 PLUG-IN : scouter.server.plugin.IObject loaded #x1pqc7pj
+20240307 08:53:08 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 08:53:08 PLUG-IN : scouter.server.plugin.IXLog loaded #xapckte
+20240307 08:53:08 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 08:53:08 PLUG-IN : scouter.server.plugin.IXLog loaded #x17vfbgc
+20240307 08:53:08 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 08:53:08 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x1dmt7vl
+20240307 08:53:08 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 08:53:08 PLUG-IN : scouter.server.plugin.ISummary loaded #xqgfg6r
+20240307 08:54:33 Load Account File
+20240307 08:54:43 Load Account File
+20240307 09:00:23 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=127.0.0.1 2.20.0 2023-05-29 05:14 GMT alive 2024-03-07 09:00:23.665 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240307 09:18:18 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-07 09:18:18.763 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240307 09:18:36 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240307 09:18:36 [PID]5904
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240307 09:18:40 [S178] Server Shutdown
+20240307 09:18:40 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@6574a52c ...
+20240307 09:18:40 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@6c1a5b54 ...
+20240307 09:18:40 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@1c7696c6 ...
+20240307 09:18:42 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240307 09:18:43 [PID]5944
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240307 09:18:43 Load Account Group File
+20240307 09:18:43 Load Account File
+20240307 09:18:43 Load Account Group File
+20240307 09:18:43 udp listen 0.0.0.0:6100
+20240307 09:18:43 	udp_host=0.0.0.0
+20240307 09:18:43 	udp_port=6100
+20240307 09:18:43 	udp_buffer=65535
+20240307 09:18:43 	udp_so_rcvbuf=4194304
+20240307 09:18:43 Load Account File
+20240307 09:18:43 	tcp_port=6100
+20240307 09:18:43 	cp_agent_so_timeout=60000
+20240307 09:18:43 	cp_client_so_timeout=8000
+20240307 09:18:44 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-07 09:18:44.041 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240307 09:18:48 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 09:18:48 [S215] Alert rule detected : ErrorRate.alert
+20240307 09:18:48 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 09:18:48 PLUG-IN : scouter.server.plugin.IAlert loaded #x7ptpbn
+20240307 09:18:48 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 09:18:48 PLUG-IN : scouter.server.plugin.ICounter loaded #x1n42vk2
+20240307 09:18:48 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 09:18:48 PLUG-IN : scouter.server.plugin.IObject loaded #xph520m
+20240307 09:18:48 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 09:18:48 PLUG-IN : scouter.server.plugin.IXLog loaded #x1iohs04
+20240307 09:18:48 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 09:18:48 PLUG-IN : scouter.server.plugin.IXLog loaded #x1oan4j9
+20240307 09:18:48 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 09:18:48 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x1faa5k
+20240307 09:18:48 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 09:18:48 PLUG-IN : scouter.server.plugin.ISummary loaded #x1psiprv
+20240307 12:21:11 [S104] New OBJECT  objType=tomcat objHash=z1coum8r objName=/MT-SIT-Goodie/MT-SIT-GOODIE addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:21:11.94 {detected=tomcat,ADC=false}
+20240307 12:22:11 [S104] New OBJECT  objType=linux objHash=xoshk9g objName=/MT-SIT-Goodie addr=10.10.10.53 2.20.0 2023-05-29 05:14 GMT alive 2024-03-07 12:22:11.06 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Goodie}
+20240307 12:22:55 [S104] New OBJECT  objType=tomcat objHash=z6snhef objName=/MT-SIT-WOI/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:22:55.336 {detected=tomcat,ADC=false}
+20240307 12:23:18 [S104] New OBJECT  objType=tomcat objHash=x1h4nkvm objName=/MT-SIT-WOI/MT-SIT-WOI-Merchant-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:23:18.096 {detected=tomcat,ADC=false}
+20240307 12:23:27 [S145] GeoIP db file is not readable : /opt/SCOUTER/scouter/server/conf/GeoLiteCity.dat
+20240307 12:23:34 [S104] New OBJECT  objType=tomcat objHash=z1cquin3 objName=/MT-SIT-WOI/MT-SIT-WOI-Biller-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:23:34.106 {detected=tomcat,ADC=false}
+20240307 12:23:44 [S104] New OBJECT  objType=tomcat objHash=z192tclv objName=/MT-SIT-WOI/MT-SIT-WOI-Point-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:23:44.012 {detected=tomcat,ADC=false}
+20240307 12:23:58 [S104] New OBJECT  objType=tomcat objHash=z1e54847 objName=/MT-SIT-WOI/MT-SIT-WOI-Member-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:23:58.724 {detected=tomcat,ADC=false}
+20240307 12:24:10 [S104] New OBJECT  objType=tomcat objHash=x2c1l16 objName=/MT-SIT-WOI/MT-SIT-WOI-Transfer-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:24:10.732 {detected=tomcat,ADC=false}
+20240307 12:24:24 [S104] New OBJECT  objType=tomcat objHash=z1dg9phe objName=/MT-SIT-WOI/MT-SIT-WOI-Web-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:24:24.042 {detected=tomcat,ADC=false}
+20240307 12:24:42 [S104] New OBJECT  objType=tomcat objHash=zd7omth objName=/MT-SIT-WOI/MT-SIT-WOI-Router-Service addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2024-03-07 12:24:42.356 {detected=tomcat,ADC=false}
+20240307 12:25:09 [S104] New OBJECT  objType=linux objHash=z9idui3 objName=/MT-SIT-WOI addr=10.10.11.231 2.20.0 2023-05-29 05:14 GMT alive 2024-03-07 12:25:09.27 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-WOI}
+20240307 12:42:20 [S178] Server Shutdown
+20240307 12:42:20 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@6340e5f0 ...
+20240307 12:42:20 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@45099dd3 ...
+20240307 12:42:20 [S179] Shutdown scouter.server.tagcnt.core.CountEnv$$anon$1@13e344d ...
+20240307 12:52:36 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20240307 12:52:36 [PID]9100
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20240307 12:52:36 Load Account Group File
+20240307 12:52:36 Load Account File
+20240307 12:52:36 Load Account Group File
+20240307 12:52:36 udp listen 0.0.0.0:6100
+20240307 12:52:36 	udp_host=0.0.0.0
+20240307 12:52:36 	udp_port=6100
+20240307 12:52:36 	udp_buffer=65535
+20240307 12:52:36 	udp_so_rcvbuf=4194304
+20240307 12:52:36 Load Account File
+20240307 12:52:36 	tcp_port=6100
+20240307 12:52:36 	cp_agent_so_timeout=60000
+20240307 12:52:36 	cp_client_so_timeout=8000
+20240307 12:52:37 [S104] New OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-07 12:52:37.918 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}
+20240307 12:52:41 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 12:52:41 [S215] Alert rule detected : ErrorRate.alert
+20240307 12:52:41 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 12:52:41 PLUG-IN : scouter.server.plugin.IAlert loaded #x1ejljo3
+20240307 12:52:41 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 12:52:41 PLUG-IN : scouter.server.plugin.ICounter loaded #xl7nddr
+20240307 12:52:41 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 12:52:41 PLUG-IN : scouter.server.plugin.IObject loaded #x1qjoq3p
+20240307 12:52:41 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 12:52:41 PLUG-IN : scouter.server.plugin.IXLog loaded #xm8cmlv
+20240307 12:52:41 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 12:52:41 PLUG-IN : scouter.server.plugin.IXLog loaded #x5o1b8g
+20240307 12:52:41 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 12:52:41 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x1rhab5f
+20240307 12:52:41 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20240307 12:52:41 PLUG-IN : scouter.server.plugin.ISummary loaded #x1fsc97c
+20240307 12:56:13 [REMOTE_CONTROL_ALL]REFETCH_COUNTER_XML from 192.168.5.136
+20240308 00:00:00 [S105] Update OBJECT  objType=linux objHash=zatgfjr objName=/MT-SIT-Monitoring-v2 addr=10.10.1.15 2.20.0 2023-05-29 05:14 GMT alive 2024-03-08 00:00:00.049 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=MT-SIT-Monitoring-v2}

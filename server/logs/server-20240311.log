@@ -1,0 +1,36 @@
+20240311 01:40:36 [S206] * Auto deletion... 20240307 mode : PROFILE
+20240311 01:40:36 [S206-1] [purge profile by][capacity]20240307
+20240311 01:40:36 [S206-1] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240308 mode : PROFILE
+20240311 01:40:36 [S206-1] [purge profile by][capacity]20240308
+20240311 01:40:36 [S206-1] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240309 mode : PROFILE
+20240311 01:40:36 [S206-1] [purge profile by][capacity]20240309
+20240311 01:40:36 [S206-1] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240310 mode : PROFILE
+20240311 01:40:36 [S206-1] [purge profile by][capacity]20240310
+20240311 01:40:36 [S206-1] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240307 mode : XLOG
+20240311 01:40:36 [S206-2] [purge xlog by][capacity]20240307
+20240311 01:40:36 [S206-2] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240308 mode : XLOG
+20240311 01:40:36 [S206-2] [purge xlog by][capacity]20240308
+20240311 01:40:36 [S206-2] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240309 mode : XLOG
+20240311 01:40:36 [S206-2] [purge xlog by][capacity]20240309
+20240311 01:40:36 [S206-2] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240310 mode : XLOG
+20240311 01:40:36 [S206-2] [purge xlog by][capacity]20240310
+20240311 01:40:36 [S206-2] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240307 mode : ALL
+20240311 01:40:36 [S206-3] [purge counters by][capacity]20240307
+20240311 01:40:36 [S206-3] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240308 mode : ALL
+20240311 01:40:36 [S206-3] [purge counters by][capacity]20240308
+20240311 01:40:36 [S206-3] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240309 mode : ALL
+20240311 01:40:36 [S206-3] [purge counters by][capacity]20240309
+20240311 01:40:36 [S206-3] * option : conf.mgr_purge_disk_usage_pct : 80
+20240311 01:40:36 [S206] * Auto deletion... 20240310 mode : ALL
+20240311 01:40:36 [S206-3] [purge counters by][capacity]20240310
+20240311 01:40:36 [S206-3] * option : conf.mgr_purge_disk_usage_pct : 80
